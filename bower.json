@@ -1,0 +1,18 @@
+{
+  "name": "vytas315",
+  "description": "A helper site for tracking your progress in march madness pools while watching march madness games.",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "Vytas Bradunas (vytas315@gmail.com)"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -69,5 +69,6 @@ Vagrant.configure(2) do |config|
     sudo apt-get upgrade -y
     sudo apt-get install -y nodejs npm
     sudo ln -s /usr/bin/nodejs /usr/bin/node
+    sudo npm install -g bower
   SHELL
 end
