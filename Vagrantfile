@@ -23,6 +23,7 @@ Vagrant.configure(2) do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:8080" will access port 80 on the guest machine.
   config.vm.network "forwarded_port", guest: 3000, host: 3000
+  config.vm.network "forwarded_port", guest: 5000, host: 5050
 
   # Create a private network, which allows host-only access to the machine
   # using a specific IP.
@@ -67,8 +68,9 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
     sudo apt-get upgrade -y
-    sudo apt-get install -y nodejs npm git
+    sudo apt-get install -y nodejs npm git python-pip
     sudo ln -s /usr/bin/nodejs /usr/bin/node
     sudo npm install -g bower
+    sudo pip install Flask
   SHELL
 end
