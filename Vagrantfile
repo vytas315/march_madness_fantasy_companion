@@ -67,7 +67,7 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: <<-SHELL
     sudo apt-get update
     sudo apt-get upgrade -y
-    sudo apt-get install -y nodejs npm
+    sudo apt-get install -y nodejs npm git
     sudo ln -s /usr/bin/nodejs /usr/bin/node
     sudo npm install -g bower
   SHELL
